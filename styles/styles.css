@@ -11,6 +11,7 @@
   width: 75%;
   max-width: 1440px;
   margin: 0 auto;
+  margin-bottom: 85px;
 }
 .section-description {
   color: #727272;
@@ -78,6 +79,31 @@ nav li a {
 }
 .banner img {
   width: 100%;
+}
+/* team styles  */
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.img-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.teams-title {
+  color: #727272;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.of-our {
+  color: #131313;
+  font-weight: 700;
+}
+.features {
+  color: #ff900e;
+  font-weight: 700;
 }
 
 /* responsive media queries */
