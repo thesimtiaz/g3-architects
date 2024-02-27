@@ -1,6 +1,7 @@
 /* work sans google font */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* shared styles */
 * {
   font-family: "Work Sans", sans-serif;
   margin: 0;
@@ -11,14 +12,37 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+.section-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 20px 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+}
+.btn-primary:hover {
+  background: rebeccapurple;
+  cursor: pointer;
+}
+/* header styles start */
 header {
   background: rgba(255, 144, 14, 0.1);
 }
+/* navbar menu styles */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 50px;
 }
 .nav-title {
   color: #131313;
@@ -38,4 +62,20 @@ nav li a {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 26px;
+}
+/* banner  styles*/
+.banner-content {
+  width: 862px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.banner-title {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.banner img {
+  width: 100%;
 }
