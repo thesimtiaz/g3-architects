@@ -51,10 +51,10 @@ nav {
 }
 nav ul {
   display: flex;
+  gap: 24px;
 }
 nav li {
   list-style: none;
-  margin-right: 2.5rem;
 }
 nav li a {
   text-decoration: none;
@@ -78,4 +78,57 @@ nav li a {
 }
 .banner img {
   width: 100%;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+  nav li a {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .btn-primary {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+  .banner img {
+    border-radius: 5px;
+  }
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+  nav li a {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 2.8rem;
+  }
+  .btn-primary {
+    padding: 16px 20px;
+    font-size: 1.2rem;
+  }
 }
