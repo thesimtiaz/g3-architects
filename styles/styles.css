@@ -138,12 +138,31 @@ nav li a {
   font-weight: 600;
 }
 
+/* sponsors styles */
+.sponsors {
+  text-align: center;
+}
+.sponsors-img {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.sponsors-img img {
+  width: 150px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
   nav,
   .teams,
-  .facts-card {
+  .facts-card,
+  .sponsors-img {
     flex-direction: column;
   }
   .nav-title {
