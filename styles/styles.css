@@ -11,7 +11,6 @@
   width: 75%;
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 85px;
 }
 .section-title {
   color: #131313;
@@ -43,6 +42,7 @@
 /* header styles start */
 header {
   background: rgba(255, 144, 14, 0.1);
+  margin-bottom: 85px;
 }
 /* navbar menu styles */
 nav {
@@ -92,6 +92,7 @@ nav li a {
   display: flex;
   align-items: center;
   gap: 70px;
+  margin-bottom: 85px;
 }
 .img-content {
   display: grid;
@@ -112,8 +113,55 @@ nav li a {
   color: #ff900e;
   font-weight: 700;
 }
+/* features styles */
+.features {
+  display: flex;
+  gap: 140px;
+  margin-bottom: 85px;
+}
+.features-content .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.card-title {
+  color: #131313;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.experience {
+  border-radius: 8px;
+  background: #ff900e;
+  color: white;
+  width: 342px;
+  padding: 45px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  right: 100px;
+}
+.experience h2 {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.experience p {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 40px;
+}
 
 /* facts styles */
+.facts {
+  margin-bottom: 85px;
+}
 .facts-card {
   display: flex;
   justify-content: space-around;
@@ -161,6 +209,7 @@ nav li a {
 @media screen and (max-width: 576px) {
   nav,
   .teams,
+  .features,
   .facts-card,
   .sponsors-img {
     flex-direction: column;
@@ -173,12 +222,14 @@ nav li a {
     flex-direction: column;
     font-size: 1rem;
   }
-  .banner-content {
+  .banner-content,
+  .features-img img {
     width: 100%;
   }
   .banner-title,
   .teams-title,
-  .section-title {
+  .section-title,
+  .experience h2 {
     font-size: 2rem;
   }
   .btn-primary {
@@ -197,6 +248,15 @@ nav li a {
   .section-description {
     text-align: center;
   }
+  .experience {
+    width: 70%;
+    padding: 0;
+    bottom: 70px;
+    right: 50px;
+  }
+  .experience p {
+    font-size: 1rem;
+  }
   .facts-card .card {
     margin-bottom: 24px;
   }
@@ -206,6 +266,7 @@ nav li a {
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav,
   .teams,
+  .features,
   .facts-card {
     flex-direction: column;
   }
@@ -217,7 +278,8 @@ nav li a {
     flex-direction: column;
     font-size: 1.5rem;
   }
-  .banner-content {
+  .banner-content,
+  .features-img img {
     width: 100%;
   }
   .banner-title,
@@ -232,6 +294,12 @@ nav li a {
   .section-title,
   .section-description {
     text-align: center;
+  }
+  .experience {
+    width: 80%;
+    padding: 10px 0;
+    bottom: 70px;
+    right: 70px;
   }
   .facts-card {
     display: grid;
